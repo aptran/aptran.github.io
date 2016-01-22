@@ -4,12 +4,15 @@ $(document).ready(function(){
     $("#menu").css("position", "absolute");
   }
   
+  /* Show background image of active section */
+  $(".active .menuImg").fadeTo(500, 1); 
   
   /* Fade in/out image on hover */ 
   $(".clip").hover(function() {
     $(this).find(".menuImg").fadeTo(500, 1);
   }, function() {
-    $(this).find(".menuImg").fadeTo(250, 0);
+    if(!$(this).hasClass("active"))
+      $(this).find(".menuImg").fadeTo(250, 0);
   });
   
   /* Scroll to section when menu option clicked. */
@@ -19,6 +22,39 @@ $(document).ready(function(){
         'slow');
   });
   
+  /* Switch out active menu for new one */
+  function switchActive(nowActive) {
+    $(".active .menuImg").fadeTo(250, 0); 
+    $(".active").removeClass("active");
+    nowActive.addClass("active");
+    $(".active .menuImg").fadeTo(500, 1); 
+  }
+
+  /* Detect which section page is current on, and show menu image accordingly */
+  $(window).scroll(function(){
+    if($(window).scrollTop() > $("#contact").offset().top - $("#contact").height()/2) {
+      // In Contact
+      console.log("in contact");
+      if(!$("#contactMenu").hasClass("active")) {
+        switchActive($("#contactMenu"));
+      }
+
+    } else if($(window).scrollTop() > $("#portfolio").offset().top - $("#portfolio").height()/2) {
+      // In Portfolio
+      console.log("in portfolio");
+      if(!$("#portfolioMenu").hasClass("active")) {
+        switchActive($("#portfolioMenu"));
+      }
+    } else {
+      // In About
+      console.log("in about");
+      if(!$("#aboutMenu").hasClass("active")) {
+        switchActive($("#aboutMenu"));
+      }
+    }
+
+  });
+
   
   /* Show pop up div when project clicked and disable scrolling. */
   $(".project").on("click", function(){

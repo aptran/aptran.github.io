@@ -1,6 +1,8 @@
 <html>
 <head>
   <title>Anh Tran | Developer</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway' />
   <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
@@ -16,17 +18,17 @@
       <h5>Developer</h5>
     </div>
     <div id='menuOptions'>
-      <div class='clip clip-right'>
+      <div id='aboutMenu' class='clip clip-right active'>
         <img class='menuImg' src='http://img15.deviantart.net/6805/i/2010/036/a/6/cliffs_of_moher_panorama_by_sha1rath.jpg'>
         <a href='#about'><h3>About</h3></a>
       </div>
      
-      <div class='clip clip-left'>
+      <div id='portfolioMenu' class='clip clip-left'>
         <img class='menuImg' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKzhwUm8mhEme6_az5Z5IPtTMrktIyUi2G09K2WAm8sHXdzElh'>
         <a href='#portfolio'><h3>Portfolio</h3></a>
       </div>
       
-      <div class='clip clip-right'>
+      <div id='contactMenu' class='clip clip-right'>
         <img class='menuImg' src='http://cdn.nanxiongnandi.com/bing/EdinburghCastle_EN-GB7717487499_1366x768.jpg' >
         <a href='#contact'><h3>Contact</h3></a>
       </div>
@@ -34,47 +36,53 @@
   </div>
   <div id='contentWrap' class='col-md-8 col-md-offset-4 text-center'>
     <!-- About Me section -->
-    <h1 id='about' class='sectionTitle'>About Me</h1>
-    <hr />
-    <div class='content'>
-      <p>My name is Anh, and I am an aspiring web/mobile/software developer. I recently graduated from the University of California, San Diego with a Bachelor's degree in Computer Science.</p>
-      <p>As I proceed with my career, I hope I can use my technical abilities in a meaningful way to help others.</p>
-      <p>Fun fact: I was fortunate enough to have the opportunity to study abroad at the University College Cork in Ireland during my senior year. I was able to visit many Irish cities (Dublin, Cork, Galway), as well as other cities within Europe (Glasgow, Edinburgh, Barcelona, Amsterdam, and Utrecht). It was, by far, the most rewarding experience I have had in my entire life. Traveling is a passion of mine, and I hope to do more of it as soon as I can.<p></div>
+    <div id='about' class='content'>
+      <h1 class='sectionTitle'>About Me</h1>
+      <hr />
+      <div>
+        <p>My name is Anh, and I am an aspiring web/mobile/software developer. I recently graduated from the University of California, San Diego with a Bachelor's degree in Computer Science.</p>
+        <p>As I proceed with my career, I hope I can use my technical abilities in a meaningful way to help others.</p>
+        <p>Fun fact: I was fortunate enough to have the opportunity to study abroad at the University College Cork in Ireland during my senior year. I was able to visit many Irish cities (Dublin, Cork, Galway), as well as other cities within Europe (Glasgow, Edinburgh, Barcelona, Amsterdam, and Utrecht). It was, by far, the most rewarding experience I have had in my entire life. Traveling is a passion of mine, and I hope to do more of it as soon as I can.<p>
+      </div>
+    </div>
     
     <!-- Portfolio secion -->
-    <h1 id='portfolio' class='sectionTitle'>Portfolio</h1>
-    <hr />
-    <div class='content'>
-      <p>Some projects I've done...</p>
-      <div id='projects'>
-        <div class='project'>
-          <img  src='http://placehold.it/300x200' />
-          <h1>Emojilyze</h1>
-          <p>Keep track of your moods with Emojilyze! This mobile responsive, prototype web application, focused on Human Computer Interaction and Usability, allows users to update their current mood as well as view their friends' moods. <br /> <br />
-          View Website: <a href='http://emojilyze.herokuapp.com' target='_blank'>http://emojilyze.herokuapp.com</a>
-          </p>
-        </div>
-        
-        <div class='project'>
-          <img  src='http://placehold.it/300x200' />
-          <h1>Weather Forecast</h1>
-          <p>Check out your location's current weather, as well as a four day forecast! <br /><br />
-          View Website: <a href='https://aptran.github.io/weather-webapp' target='_blank'>aptran.github.io/weather-webapp</a>
-          </p>
-        </div>
-        
-        <div class='project'>
-          <img src='http://placehold.it/300x200' />
-          <h1>Project 3</h1>
-          <p>Brief description3...</p></div>
-        
-        <div class='project'>
-          <img  src='http://placehold.it/300x200' />
-          <h1>Project 4</h1>
-          <p>Brief description4...</p>
+    <div id='portfolio' class='content'>
+      <h1 class='sectionTitle'>Portfolio</h1>
+      <hr />
+      <div>
+        <p>Some projects I've done...</p>
+        <div id='projects'>
+          <div class='project'>
+            <img  src='http://placehold.it/300x200' />
+            <h1>Emojilyze</h1>
+            <p>Keep track of your moods with Emojilyze! This mobile responsive, prototype web application, focused on Human Computer Interaction and Usability, allows users to update their current mood as well as view their friends' moods. <br /> <br />
+            View Website: <a href='http://emojilyze.herokuapp.com' target='_blank'>http://emojilyze.herokuapp.com</a>
+            </p>
+          </div>
+          
+          <div class='project'>
+            <img  src='http://placehold.it/300x200' />
+            <h1>Weather Forecast</h1>
+            <p>Check out your location's current weather, as well as a four day forecast! <br /><br />
+            View Website: <a href='https://aptran.github.io/weather-webapp' target='_blank'>aptran.github.io/weather-webapp</a>
+            </p>
+          </div>
+          
+          <div class='project'>
+            <img src='http://placehold.it/300x200' />
+            <h1>Project 3</h1>
+            <p>Brief description3...</p></div>
+          
+          <div class='project'>
+            <img  src='http://placehold.it/300x200' />
+            <h1>Project 4</h1>
+            <p>Brief description4...</p>
+          </div>
         </div>
       </div>
     </div>
+
     <div id='popUp' class='text-right' style='display:none;'>
       <i class='fa fa-close fa-4x'></i>
       <h1 id='projectName' class='text-center'>Project Name</h1>
@@ -83,16 +91,18 @@
     
     
     <!-- Contact section -->
-    <h1 id='contact' class='sectionTitle'>Contact</h1>
-    <hr />
-    <div class='content'>
-      <p>Get in touch!</p>
-      <a href='https://www.linkedin.com/in/anhphitran' target='_blank'>
-        <i class='fa fa-linkedin-square fa-4x'></i>
-      </a>
-      <a href='https://github.com/aptran' target='_blank'>
-        <i class='fa fa-github-square fa-4x'></i>
-      </a>
+    <div id='contact' class='content'>
+      <h1 class='sectionTitle'>Contact</h1>
+      <hr />
+      <div>
+        <p>Get in touch!</p>
+        <a href='https://www.linkedin.com/in/anhphitran' target='_blank'>
+          <i class='fa fa-linkedin-square fa-4x'></i>
+        </a>
+        <a href='https://github.com/aptran' target='_blank'>
+          <i class='fa fa-github-square fa-4x'></i>
+        </a>
+      </div>
     </div>
   </div>
   </div>
