@@ -4,17 +4,13 @@ html, body {
 body {
   color: #444;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px; }
+  font-size: 20px; }
 
 a {
   color: #FFF; }
 
 .sectionTitle {
   font-size: 50px; }
-
-hr {
-  border-color: #DDD;
-  border-width: 3px; }
 
 #menu {
   color: #FFF;
@@ -76,8 +72,7 @@ hr {
   text-decoration: none; }
 
 .clip-left a {
-  left: 60%;
-}
+  left: 60%; }
 
 .menuImg {
   opacity: 0;
@@ -90,10 +85,15 @@ hr {
   min-height: 100%;
   padding: 0 20px 0 20px; }
 
+.content hr {
+  border-color: #DDD;
+  border-width: 3px; }
+
 .project {
   display: inline-block;
   position: relative;
-  margin: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   height: 200px;
   width: 300px; }
 
@@ -104,16 +104,10 @@ hr {
 .project img {
   height: auto; 
   width: auto; 
-  max-width: 300px; 
-  max-height: 200px; }
+  max-height: 200px;
+  max-width: 300px; }
 
-.project h1 {
-  color: #444;
-  position: absolute;
-  top: 100px;
-  left: 10px; }
-
-.project p {
+.project h1, .project p {
   display: none; }
 
 #popUp {
@@ -131,14 +125,19 @@ hr {
 
 @media only screen and (max-width : 992px) {
   #popUp {
-    top: 100px;
-  }
+    top: 100px; }
 }
 
+#popUp hr {
+  border-color: #444;
+  border-width: 3px; }
+
 .fa {
-  color: #444; }
+  color: #444;
+  margin: 0px 5px 0px 5px; }
 
 .fa:hover {
+  text-decoration: none;
   color: #55A1DD; }
 
 .fa-close {

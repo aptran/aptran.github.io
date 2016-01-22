@@ -34,25 +34,20 @@ $(document).ready(function(){
   $(window).scroll(function(){
     if($(window).scrollTop() > $("#contact").offset().top - $("#contact").height()/2) {
       // In Contact
-      console.log("in contact");
       if(!$("#contactMenu").hasClass("active")) {
         switchActive($("#contactMenu"));
       }
-
     } else if($(window).scrollTop() > $("#portfolio").offset().top - $("#portfolio").height()/2) {
       // In Portfolio
-      console.log("in portfolio");
       if(!$("#portfolioMenu").hasClass("active")) {
         switchActive($("#portfolioMenu"));
       }
     } else {
       // In About
-      console.log("in about");
       if(!$("#aboutMenu").hasClass("active")) {
         switchActive($("#aboutMenu"));
       }
     }
-
   });
 
   
