@@ -72,6 +72,9 @@ $(document).ready(function(){
     if($(window).height() < $("#menu").height()) {
       $("#menu").css("position", "absolute");
     }
+    else if($(window).width() < 992) {
+      $("#menu").css("position", "absolute");
+    }
     else {
       $("#menu").css("position", "fixed");
     }

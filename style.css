@@ -31,6 +31,7 @@ a {
   #menu {
     min-height: 100px;
     width: 100%;
+    position: absolute;
     z-index: 1; }
   
   #menuOptions {
@@ -123,10 +124,6 @@ a {
   overflow: auto;
   z-index: 2; }
 
-@media only screen and (max-width : 992px) {
-  #popUp {
-    top: 100px; }
-}
 
 #popUp hr {
   border-color: #444;
