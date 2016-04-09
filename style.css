@@ -91,6 +91,7 @@ a {
   border-width: 3px; }
 
 .project {
+  transition: transform .2s ease;
   display: inline-block;
   position: relative;
   margin-right: 20px;
@@ -99,17 +100,32 @@ a {
   width: 300px; }
 
 .project:hover {
+  transform: scaleX(1.1) scaleY(1.2);
   cursor: pointer;
-  opacity: 0.7; }
+  -webkit-filter: drop-shadow(5px 5px 2px #000);
+  opacity: 0.5; }
 
 .project img {
+  z-index: 1;
   height: auto; 
   width: auto; 
   max-height: 200px;
   max-width: 300px; }
 
-.project h1, .project p {
+.project:hover img {
+  -webkit-filter: brightness(0.2);
+}
+
+.project p {
   display: none; }
+
+.carousel-caption {
+  color: #FFF;
+  visibility: hidden;
+}
+.project:hover .carousel-caption {
+  visibility: visible;
+}
 
 #popUp {
   color: #FFF;
