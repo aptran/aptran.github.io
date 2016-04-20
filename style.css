@@ -113,7 +113,7 @@ a {
   max-width: 300px; }
 
 .project:hover img {
-  -webkit-filter: brightness(0.2);
+  -webkit-filter: brightness(0.5) blur(2px);
 }
 
 .project p {
@@ -147,6 +147,7 @@ a {
 
 .fa {
   color: #444;
+  transition: color .2s ease;
   margin: 0px 5px 0px 5px; }
 
 .fa:hover {

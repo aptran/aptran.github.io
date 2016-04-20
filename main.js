@@ -57,13 +57,13 @@ $(document).ready(function(){
     $("#popUp").css("min-height", height);
     $("#projectName").text($(this).find("h1").text());
     $("#projectDescription").html($(this).find("p").html());
-    $("#popUp").show();
+    $("#popUp").fadeIn(300);
     $("body").css("overflow", "hidden");
   });
   
   /* Close pop up div and re-enable scrolling. */
   $(".fa-close").on("click", function(){
-    $("#popUp").hide();
+    $("#popUp").fadeOut(300);
     $("body").css("overflow", "visible");
   });
   
