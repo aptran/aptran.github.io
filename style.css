@@ -5,7 +5,8 @@ body {
   font-size: 20px; }
 
 a {
-  color: #FFF; }
+  color: #FFF;
+  text-decoration: none; }
 
 h1 {
   font-family: 'Nothing You Could Do', cursive; }
@@ -17,10 +18,15 @@ h1 {
   text-align: center;
 }
 
-.fa {
-  transition: color .2s ease;
-  margin: 0 5px; }
+.contact-link {
+  display: inline-block;
+  margin: 0 20px;
+}
 
+.fa {
+  transition: color .2s ease; }
+
+.contact-link:focus,
 .fa:hover {
   text-decoration: none;
   color: #55A1DD; }
