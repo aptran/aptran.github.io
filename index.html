@@ -1,186 +1,32 @@
 <html>
-<head>
-  <title>Anh Tran | Developer</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300' />
-  <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <link rel='stylesheet' type='text/css' href='style.css' />
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico?" />
-</head>
-<body>
-<div class='container-fluid'>
-  <div class='row'>
-  <div id='menu' class='col-md-4'>
-    <div id='header' class='text-center'>
-      <h1>Anh Tran</h1>
-      <h4>Developer</h4>
-    </div>
-    <div id='menuOptions'>
-      <div id='aboutMenu' class='clip clip-right active'>
-        <img class='menuImg' src='img/cliffs_of_moher.jpg'>
-        <a href='#about'><h3>About</h3></a>
-      </div>
-     
-      <div id='portfolioMenu' class='clip clip-left'>
-        <img class='menuImg' src='img/amsterdam.jpeg'>
-        <a href='#portfolio'><h3>Portfolio</h3></a>
-      </div>
-      
-      <div id='contactMenu' class='clip clip-right'>
-        <img class='menuImg' src='img/edinburgh_castle.jpg' >
-        <a href='#contact'><h3>Contact</h3></a>
-      </div>
-    </div>
-  </div>
-  <div id='contentWrap' class='col-md-8 col-md-offset-4 text-center'>
-    <!-- About Me section -->
-    <div id='about' class='content'>
-      <h1 class='sectionTitle'>About Me</h1>
+  <head>
+    <title>Anh Tran | Developer</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:100' />
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel='stylesheet' type='text/css' href='style.css' />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?" />
+  </head>
+  <body>
+    <div class='content'>
+      <h1>Hi, I'm Anh.</h1>
       <hr />
-      <div>
-        <p>My name is Anh, and I am an aspiring web/mobile/software developer. I recently graduated from the University of California, San Diego with a Bachelor's degree in Computer Science.</p>
-        <p>As I proceed with my career, I hope I can use my technical abilities in a meaningful way to help others.</p>
-        <p>Fun fact: I was fortunate enough to have the opportunity to study abroad at the University College Cork in Ireland during my senior year. I was able to visit many Irish cities (Dublin, Cork, Galway), as well as other cities within Europe (Glasgow, Edinburgh, Barcelona, Amsterdam, and Utrecht). It was, by far, the most rewarding experience I have had in my entire life. Traveling is a passion of mine, and I hope to do more of it as soon as I can.<p>
-      </div>
-    </div>
-    
-    <!-- Portfolio secion -->
-    <div id='portfolio' class='content'>
-      <h1 class='sectionTitle'>Portfolio</h1>
+      <a href='mailto:tran.anh.p@gmail.com'>
+        <i class='fa fa-envelope-square fa-4x'></i>
+      </a>
+      <a href='https://www.linkedin.com/in/anhphitran' target='_blank'>
+        <i class='fa fa-linkedin-square fa-4x'></i>
+      </a>
+      <a href='https://github.com/aptran' target='_blank'>
+        <i class='fa fa-github-square fa-4x'></i>
+      </a>
+      <a href='http://codepen.io/aptran/' target='_blank'>
+        <i class='fa fa-codepen fa-4x'></i>
+      </a>
       <hr />
-      <div>
-        <p>Some projects I've done...</p><br />
-        <div id='projects'>
-          <div class='project'>
-            <img  src='img/kanban.png' />
-            <div class="carousel-caption">
-              <h1>Kanban</h1>
-            </div>
-            <p>Stay organized with this drag-and-drop task board web application. I developed Kanban using Node.js and React.js. Data is managed using Alt, a Flux architecture library, and is currently stored and persisted through local storage. I used Webpack to bundle stylesheets and images in the build process, and the application is currently deployed using GitHub Pages.  <br /> <br />
-            Try it out: <a href='http://aptran.github.io/kanban/' target='_blank'><i>Here</i></a>
-            </p>
-          </div>
-
-          <div class='project'>
-            <img src='img/d3-collection.png' />
-            <div class="carousel-caption">
-              <h1>D3.js Collection</h1>
-            </div>
-            <p>A CodePen collection of various visualizations I created with the D3.js library. <br /><br /> View Pens: <a href='http://codepen.io/collection/Dyypdq/' target='_blank'><i>Here</i></a>
-            </p>
-          </div>
-
-          <div class='project'>
-            <img src='img/game_of_life.png' />
-            <div class="carousel-caption">
-              <h1>Game of Life</h1>
-            </div>
-            <p>Visualize Conway's Game of Life with this simulator! Select from different board sizes and different simulation speeds and create your own board pattern to see your cell population evolve. This React.js project was a bit more difficult than the recipe box I made, but the working outcome was glorious! <br /><br /> Check it out: <a href='http://codepen.io/aptran/full/bEORQB/' target='_blank'><i>Here</i></a>
-            </p>
-          </div>
-
-          <div class='project'>
-            <img  src='img/emojilyze.png' />
-            <div class="carousel-caption">
-              <h1>Emojilyze</h1>
-            </div>
-            <p>Keep track of your moods with Emojilyze! This mobile responsive, prototype web application, focused on Human Computer Interaction and Usability, allows users to update their current mood as well as view their friends' moods. <br /> <br />
-            View Website: <a href='http://emojilyze.herokuapp.com' target='_blank'><i>Here</i></a>
-            </p>
-          </div>
-
-          <div class='project'>
-            <img src='img/blender.png' />
-            <div class="carousel-caption">
-              <h1>blender</h1>
-            </div>
-            <p>Customize smoothie recipies and view overall nutrition facts with this beautiful iOS app! Although it was never officially published to the app store, I had an amazing time building this smoothie app from scratch with five team members, and learned a lot about mobile application development. <br /> <br />
-            Learn more: <a href='https://www.youtube.com/watch?v=eU3tq9pPvI4' target='_blank'><i>Here</i></a> and <a href='https://www.youtube.com/watch?v=9PKedNldqeo' target='_blank'><i>Here</i></a>
-            </p>
-          </div>
-
-          <div class='project'>
-            <img src='img/wiki-viewer.png' />
-            <div class="carousel-caption">
-              <h1>Wikipedia Viewer</h1>
-            </div>
-            <p>Easily search and view wikipedia articles with this Wikipedia viewer! Or view a random article with a click of a button. <br /><br /> View Website: <a href='https://aptran.github.io/wiki-viewer' target='_blank'><i>Here</i></a>
-            </p>
-          </div>
-
-          <div class='project'>
-            <img src='img/tictactoe.png' />
-            <div class="carousel-caption">
-              <h1>Tic Tac Toe</h1>
-            </div>
-            <p>Play this beloved classic game against the computer! Unfortunately, the computer is unbeatable. Don't believe me? Go on, give it a try. <br /><br /> Play the game: <a href='http://codepen.io/aptran/full/gPKLJR/' target='_blank'><i>Here</i></a>
-            </p>
-          </div>
-
-          <div class='project'>
-            <img src='img/recipebox.png' />
-            <div class="carousel-caption">
-              <h1>My Recipe Box</h1>
-            </div>
-            <p>Keep track of your different recipes with this easy to use Recipe Box. This was a fun little project that helped me understand how to connect React.js, Bootstrap, and SCSS together. Data persists in your browser's local storage. <br /><br /> Try it out: <a href='http://codepen.io/aptran/full/VeVzpK/' target='_blank'><i>Here</i></a>
-            </p>
-          </div>
-          
-          <div class='project'>
-            <img src='http://placehold.it/300x200' />
-            <div class="carousel-caption">
-              <h1>Coming Soon!</h1>
-            </div>
-            <p>Still a work in progress...</p>
-          </div>
-        </div>
-      </div>
+      <p>I like to code stuffs.</p>
     </div>
-
-    <div id='popUp' class='text-right' style='display:none;'>
-      <i class='fa fa-close fa-4x'></i>
-      <div class='row'>
-        <div class='col-md-6 col-md-offset-3'>
-          <h1 id='projectName' class='text-center'>Project Name</h1>
-          <hr />
-          <p id='projectDescription' class='text-center'>Project Description</p>
-        </div>
-      </div>
-    </div>
-    
-    
-    <!-- Contact section -->
-    <div id='contact' class='content'>
-      <h1 class='sectionTitle'>Contact</h1>
-      <hr />
-      <div>
-        <p>Get in touch!</p>
-        <a href='mailto:tran.anh.p@gmail.com'>
-          <i class='fa fa-envelope-square fa-4x'></i>
-        </a>
-        <a href='https://www.linkedin.com/in/anhphitran' target='_blank'>
-          <i class='fa fa-linkedin-square fa-4x'></i>
-        </a>
-        <a href='https://github.com/aptran' target='_blank'>
-          <i class='fa fa-github-square fa-4x'></i>
-        </a>
-        <a href='http://codepen.io/aptran/' target='_blank'>
-          <i class='fa fa-codepen fa-4x'></i>
-        </a>
-      </div> <br />
-      <div class='row'>
-        <div class='col-md-2'></div>
-        <div class='col-md-8'>
-          <img class='img-responsive' src='img/me.jpg' />
-      </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='main.js'></script>
-</body>
+  </body>
 </html>
