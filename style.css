@@ -96,12 +96,12 @@ img {
 @keyframes anim-fade-in { from { opacity: 0; } to { opacity: 1; } }
 
 .typewriter {
-  -webkit-animation: anim-typewriter 1.5s steps(14) 1s 1 normal both,
+  -webkit-animation: anim-typewriter 1.5s steps(12) 1s 1 normal both,
             blinkTextCursor .1s steps(12) infinite normal;
-  -moz-animation: anim-typewriter 1.5s steps(14) 1s 1 normal both,
-            blinkTextCursor .1s steps(14) infinite normal;
-  animation: anim-typewriter 1.5s steps(14) 1s 1 normal both,
-            blinkTextCursor 1s steps(14) infinite normal;
+  -moz-animation: anim-typewriter 1.5s steps(12) 1s 1 normal both,
+            blinkTextCursor .1s steps(12) infinite normal;
+  animation: anim-typewriter 1.5s steps(12) 1s 1 normal both,
+            blinkTextCursor 1s steps(12) infinite normal;
 }
 @-webkit-keyframes anim-typewriter { from { width: 0; } to { width: 14rem; } }
 @-moz-keyframes anim-typewriter { from { width: 0; } to { width: 14rem; } }
