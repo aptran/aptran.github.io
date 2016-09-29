@@ -39,24 +39,6 @@ img {
   text-decoration: none;
   color: #55A1DD; }
 
-.fade-in {
-  opacity: 0;
-  -webkit-animation: fadeIn ease-in 1; 
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode: forwards; 
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-
-  -webkit-animation-duration: .7s;
-  -moz-animation-duration: .7s;
-  animation-duration: .7s;
-}
-@-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
 .img-content {
   width: 60%;
   margin: auto;
@@ -75,6 +57,14 @@ img {
   padding-top: 40px;
 }
 
+.type-line { 
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* -------- MEDIA QUERY ----------- */
 @media (max-width: 900px) {
   .content {
     width: 90%;
@@ -84,4 +74,48 @@ img {
   .img-content {
     width: 90%;
   }
+}
+
+/* -------- ANIMATIONS ------------- */
+.fade-in {
+  opacity: 0;
+  -webkit-animation: anim-fade-in ease-in 1; 
+  -moz-animation: anim-fade-in ease-in 1;
+  animation: anim-fade-in ease-in 1;
+
+  -webkit-animation-fill-mode: forwards; 
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: .7s;
+  -moz-animation-duration: .7s;
+  animation-duration: .7s;
+}
+@-webkit-keyframes anim-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@-moz-keyframes anim-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes anim-fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+.typewriter {
+  -webkit-animation: anim-typewriter 1.5s steps(14) 1s 1 normal both,
+            blinkTextCursor .1s steps(12) infinite normal;
+  -moz-animation: anim-typewriter 1.5s steps(14) 1s 1 normal both,
+            blinkTextCursor .1s steps(14) infinite normal;
+  animation: anim-typewriter 1.5s steps(14) 1s 1 normal both,
+            blinkTextCursor 1s steps(14) infinite normal;
+}
+@-webkit-keyframes anim-typewriter { from { width: 0; } to { width: 14rem; } }
+@-moz-keyframes anim-typewriter { from { width: 0; } to { width: 14rem; } }
+@keyframes anim-typewriter { from { width: 0; } to { width: 14rem; } }
+
+@-webkit-keyframes blinkTextCursor {
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+@-moz-keyframes blinkTextCursor {
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+@keyframes blinkTextCursor {
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
 }
