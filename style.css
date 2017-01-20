@@ -30,6 +30,7 @@ img {
 .fa {
   transition: color .2s ease; }
 
+.contact-link:focus,
 .fa:hover {
   color: #55A1DD; }
 
